@@ -13,6 +13,6 @@ public class Contract extends Staff
         System.out.println("---------------------------------------");
         System.out.println("Contract Staff Details");
         super.display();
-        System.out.println("Contract Period : " + period + "years");
+        System.out.println("Contract Period : " + period + " years");
     }
 }

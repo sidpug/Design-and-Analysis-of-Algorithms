@@ -16,6 +16,11 @@ public class Multilevel
         te1.Tedisplay();
         te2.Tedisplay();
         te3.Tedisplay();
-
+        Contract c1 = new Contract(31,987654253,35000,"Anil",3);
+        Contract c2 = new Contract(32,987654243,39000,"Meghana",2);
+        Contract c3 = new Contract(33,926654253,30000,"Uma",4);
+        c1.Cdisplay();
+        c2.Cdisplay();
+        c3.Cdisplay();
     }
 }
