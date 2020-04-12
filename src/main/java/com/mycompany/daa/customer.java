@@ -7,9 +7,10 @@ public class customer
 {
     String name;
     String date;
+    Scanner in;
     public void read()
     {
-        Scanner in = new Scanner(System.in);
+        in = new Scanner(System.in);
         name = in.next();
         date = in.next();
         
