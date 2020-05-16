@@ -18,7 +18,7 @@ public class subSet {
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+       
         int a[] = new int[10];
         int x[] = new int[10];
         int n, d, sum, present = 0;
