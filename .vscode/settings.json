@@ -1,8 +1,8 @@
 {
     "files.exclude": {
         "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
+        "**/.project": false,
+        "**/.settings": false,
         "**/.factorypath": true
     },
     "git.ignoreLimitWarning": true,
