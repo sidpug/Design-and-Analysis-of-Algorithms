@@ -13,18 +13,21 @@ public class prims {
         int sol[] = new int[10];
         System.out.println("Enter the number of vertices");
         Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        for (i = 1; i <= n; i++)
-            sol[i] = 0;
-        System.out.println("Enter the weighted graph");
-        for (i = 1; i <= n; i++)
-            for (j = 1; j <= n; j++)
-                w[i][j] = sc.nextInt();
-        System.out.println("Enter the source vertex");
-        s = sc.nextInt();
-        sc.close();
-        sol[s] = 1;
-        k = 1;
+        try {
+            n = sc.nextInt();
+            for (i = 1; i <= n; i++)
+                sol[i] = 0;
+            System.out.println("Enter the weighted graph");
+            for (i = 1; i <= n; i++)
+                for (j = 1; j <= n; j++)
+                    w[i][j] = sc.nextInt();
+            System.out.println("Enter the source vertex");
+            s = sc.nextInt();
+            sol[s] = 1;
+            k = 1;
+        } finally {
+            sc.close();
+        }
         while (k <= n - 1) {
             min = 99;
             for (i = 1; i <= n; i++)
@@ -47,7 +50,7 @@ public class prims {
         if (flag == 1)
             System.out.println("No spanning tree");
 
-        System.out.println("The cost of minimum spanning tree is" + sum);
+        System.out.println("The cost of minimum spanning tree is " + sum);
     }
 
 }
