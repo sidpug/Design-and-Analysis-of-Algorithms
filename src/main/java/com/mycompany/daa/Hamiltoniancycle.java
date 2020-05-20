@@ -21,9 +21,7 @@ public class Hamiltoniancycle {
                     adj[i][j] = scr.nextInt();
         } finally {
             scr.close();
-
         }
-
     }
 
     public void nextValue(int k) {
