@@ -6,19 +6,23 @@ public class Hamiltoniancycle {
     private int adj[][], x[], n;
 
     public Hamiltoniancycle() {
-        Scanner scr = new Scanner(System.in);
         System.out.println("Enter the number of nodes");
-        n = scr.nextInt();
-        x = new int[n];
-        x[0] = 0;
-        for (int i = 1; i < n; i++)
-            x[i] = -1;
-        adj = new int[n][n];
-        System.out.println("Enter the adjacency matrix");
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                adj[i][j] = scr.nextInt();
-        scr.close();
+        Scanner scr = new Scanner(System.in);
+        try {
+            n = scr.nextInt();
+            x = new int[n];
+            x[0] = 0;
+            for (int i = 1; i < n; i++)
+                x[i] = -1;
+            adj = new int[n][n];
+            System.out.println("Enter the adjacency matrix");
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                    adj[i][j] = scr.nextInt();
+        } finally {
+            scr.close();
+
+        }
 
     }
 
